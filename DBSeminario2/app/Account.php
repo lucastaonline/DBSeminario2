@@ -9,4 +9,6 @@ class Account extends Model
     protected $table = 'Accounts';
 
     protected $fillable = ['username'];
+
+    public $timestamps = false;
 }

@@ -9,4 +9,6 @@ class PostMongo extends Model
     protected $table = 'Posts';
 
     protected $fillable = ['created_by','created_on','content','liked_by'];
+
+    public $timestamps = false;
 }

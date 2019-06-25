@@ -13,4 +13,6 @@ class LikePost extends Model
     public $incrementing = false;
 
     protected $fillable = ['account_id','post_id'];
+
+    public $timestamps = false;
 }
