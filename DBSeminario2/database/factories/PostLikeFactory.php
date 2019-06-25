@@ -11,7 +11,7 @@ use App\LikePost;
 $factory->define(App\LikePost::class, function (Faker $faker) {
     $conseguiuAchar = false;
     $limitador = 0;
-    while(!$conseguiuAchar && limitador < 100000) {
+    while(!$conseguiuAchar && $limitador < 100000) {
         $accountId = Account::inRandomOrder()->first()->id;
         $postId = PostSql::inRandomOrder()->first()->id;
         if(LikePost::where('account_id', $accountID)->where('post_id', $postId)->count() > 0)
