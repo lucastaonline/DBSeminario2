@@ -10,5 +10,7 @@ class LikePost extends Model
 
     protected $primaryKey = ['account_id','post_id'];
 
+    public $incrementing = false;
+
     protected $fillable = ['account_id','post_id'];
 }
