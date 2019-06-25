@@ -11,7 +11,7 @@ $factory->define(App\PostMongo::class, function (Faker $faker) {
     $accountsRandom = Account::inRandomOrder();
     $i = 0;
     while($i < 5 && $i < $accountsRandom->count()) {
-        $liked_by->push($accountsRandom->values()->get($i));
+        array_push($liked_by,$accountsRandom->values()->get($i));
         $i++;
     }
     return [
