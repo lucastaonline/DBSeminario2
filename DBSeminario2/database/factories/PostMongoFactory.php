@@ -11,7 +11,7 @@ $factory->define(App\PostMongo::class, function (Faker $faker) {
     $accounts = Account::all();
     $i = 0;
     while($i < 5 && $i < $accounts->count()) {
-        array_push($liked_by,$accounts->values()->get($i));
+        array_push($liked_by,$accounts->values()->get($i)->id);
         $i++;
     }
     return [
