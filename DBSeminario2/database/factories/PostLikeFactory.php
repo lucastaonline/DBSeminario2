@@ -8,7 +8,7 @@ use App\Account;
 use App\PostSql;
 use App\PostLike;
 
-$factory->define(Model::class, function (Faker $faker) {
+$factory->define(App\PostLike::class, function (Faker $faker) {
     $conseguiuAchar = false;
     $limitador = 0;
     while(!$conseguiuAchar && limitador < 100000) {

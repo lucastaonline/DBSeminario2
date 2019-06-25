@@ -6,7 +6,7 @@ use App\Model;
 use Faker\Generator as Faker;
 use App\Account;
 
-$factory->define(Model::class, function (Faker $faker) {
+$factory->define(App\PostMongo::class, function (Faker $faker) {
     $liked_by = [];
     $accountsRandom = Account::inRandomOrder();
     $i = 0;
