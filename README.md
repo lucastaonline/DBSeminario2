@@ -87,3 +87,7 @@ $ php artisan db:seed
 ```
 
 
+## Observacoes
+
+Tem um pequeno erro na factory de PostsLikes, mas nada que interfira no funcionamento da seeder. Conforme o banco cresce o erro tende a não aparecer mais.
+
