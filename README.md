@@ -72,8 +72,18 @@ MONGO_DB_PASSWORD=
 
 ```
 
+Você deve alterar a classe Account para herdar de eloquent da seguinte forma:
+
+```
+
+class Account extends Eloquent
+
+```
+
 ## Rodando o seeder
 
 ```
 $ php artisan db:seed
 ```
+
+
