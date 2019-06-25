@@ -15,6 +15,10 @@ Trabalho 2 de DB. Estamos fazendo apenas seeders neste projeto.
 $ composer require jenssegers/mongodb
 ```
 
+## Em caso de problemas com mongodb-php talvez isso seja útil...
+
+https://github.com/jenssegers/laravel-mongodb/issues/797
+
 ## Clonando o projeto
 
 ### Ao clonar o projeto você deve ir a pasta do projeto (XadrezCRUD) e rodar os seguintes comandos.
