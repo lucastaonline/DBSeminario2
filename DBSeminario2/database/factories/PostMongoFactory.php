@@ -8,14 +8,14 @@ use App\Account;
 
 $factory->define(App\PostMongo::class, function (Faker $faker) {
     $liked_by = [];
-    $accountsRandom = Account::inRandomOrder();
+    $accounts = Account::all();
     $i = 0;
-    while($i < 5 && $i < $accountsRandom->count()) {
-        array_push($liked_by,$accountsRandom->values()->get($i));
+    while($i < 5 && $i < $accounts->count()) {
+        array_push($liked_by,$accounts->values()->get($i));
         $i++;
     }
     return [
-        'created_by' => $accountsRandom->first()->id,
+        'created_by' => $accounts->first()->id,
         'created_on' => now(),
         'content' => Str::random(10),
         'liked_by' => $liked_by
