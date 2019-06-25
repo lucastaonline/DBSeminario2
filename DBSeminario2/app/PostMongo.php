@@ -3,8 +3,9 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
-class PostMongo extends Model
+class PostMongo extends Eloquent
 {
     protected $table = 'Posts';
 
