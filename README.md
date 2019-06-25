@@ -45,6 +45,7 @@ $ php artisan key:generate
 
 ### SQL
 
+```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -52,8 +53,11 @@ DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=
 
+```
+
 ### MONGODB
 
+```
 DB_CONNECTION=mongodb
 
 MONGO_DB_HOST=127.0.0.1
@@ -61,6 +65,8 @@ MONGO_DB_PORT=27017
 MONGO_DB_DATABASE=mongocrud
 MONGO_DB_USERNAME=
 MONGO_DB_PASSWORD=
+
+```
 
 ## Rodando o seeder
 
