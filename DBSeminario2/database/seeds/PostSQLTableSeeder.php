@@ -11,6 +11,6 @@ class PostSQLTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\PostSql::class, 50)->create();
     }
 }
