@@ -6,15 +6,15 @@ use App\Model;
 use Faker\Generator as Faker;
 use App\Account;
 use App\PostSql;
-use App\PostLike;
+use App\LikePost;
 
-$factory->define(App\PostLike::class, function (Faker $faker) {
+$factory->define(App\LikePost::class, function (Faker $faker) {
     $conseguiuAchar = false;
     $limitador = 0;
     while(!$conseguiuAchar && limitador < 100000) {
         $accountId = Account::inRandomOrder()->first()->id;
         $postId = PostSql::inRandomOrder()->first()->id;
-        if(PostLike::where('account_id', $accountID)->where('post_id', $postId)->count() > 0)
+        if(LikePost::where('account_id', $accountID)->where('post_id', $postId)->count() > 0)
             $conseguiuAchar = true;
         $limitador += 1;
     }
